@@ -8,5 +8,5 @@ const Artist = require('../models/artist');
 module.exports = (artistProps) => {
     //console.log(artistProps);
     const artist = new Artist(artistProps);
-    return Artist.
+    return artist.save();
 };
