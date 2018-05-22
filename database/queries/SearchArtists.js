@@ -34,9 +34,8 @@ const buildQuery = (criteria) => {
     const query = {};
 
     if (criteria.name) {
-      /*  query.$text = {
-            $search: criteria.name
-        };*/
+        query.$text = { $search: criteria.name };
+        //db.artists.createIndex({name: "text})
     }
 
     if (criteria.age) {
